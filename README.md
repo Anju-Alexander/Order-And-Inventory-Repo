@@ -3,7 +3,7 @@
 The **Inventory Service** is a Spring Boot microservice responsible for managing product inventory batches with expiry dates.  
 It supports querying inventory sorted by expiry date and updating inventory when orders are placed.
 
-This service is part of the **Körber Java Microservices Assignment**.
+This service is part of the Inventory microservice
 
 ---
 
