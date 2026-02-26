@@ -75,8 +75,18 @@ This service is designed following microservice best practices:
 ### Build the Project
 ```bash
 mvn clean install
-- Maven installed
 
 ### Run the service
-```bash
 mvn spring-boot:run
+```
+## API Formats AND JSON Response
+Get Inventory
+<img width="1234" height="1144" alt="image" src="https://github.com/user-attachments/assets/59f3eeab-c6ac-453f-b195-a48e91003a72" />
+
+
+Inventory Update from Inventory Repo
+<img width="1320" height="992" alt="image" src="https://github.com/user-attachments/assets/4dd07d62-edef-499e-8cec-a57698860b9b" />
+
+Place Order
+<img width="1296" height="1266" alt="image" src="https://github.com/user-attachments/assets/f6be489e-b7f6-49ea-83f1-e2b2afbe8d79" />
+
