@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: order-data-002
+      author: anju
+      changes:
+        - loadData:
+            file: data/orders.csv
+            tableName: orders
+            separator: ","
+            quotchar: "\""

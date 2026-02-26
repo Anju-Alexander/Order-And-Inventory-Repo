@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: anju
+      changes:
+        - loadData:
+            file: classpath:data/inventory.csv
+            tableName: inventory
+            separator: ","
+            columns:
+              - column:
+                  name: batch_id
+                  type: NUMERIC
+              - column:
+                  name: product_id
+                  type: NUMERIC
+              - column:
+                  name: product_name
+                  type: STRING
+              - column:
+                  name: quantity
+                  type: NUMERIC
+              - column:
+                  name: expiry_date
+                  type: DATE
