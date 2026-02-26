@@ -34,6 +34,47 @@ This service is part of the **Körber Java Microservices Assignment**.
 
 ### Prerequisites
 - Java 17 installed
+
+# Order Service
+
+---
+
+## Overview
+
+The **Order Service** is a Spring Boot microservice responsible for placing and managing customer orders.  
+When an order is placed, the service communicates with the **Inventory Service** via REST APIs to reserve stock.
+
+This service is designed following microservice best practices:
+- Database-per-service
+- Clear separation of concerns
+- REST-based inter-service communication
+- Automated database schema and data initialization
+
+---
+
+## Technology Stack
+
+- **Java**: 17 (minimum supported: Java 8)
+- **Framework**: Spring Boot
+- **Build Tool**: Maven
+- **Database**: H2 (in-memory)
+- **ORM**: Spring Data JPA (Hibernate)
+- **Database Migration**: Liquibase (YAML changelogs + CSV)
+- **Testing**: JUnit 5, Mockito, Spring Boot Test
+- **HTTP Client**: RestTemplate
+
+---
+
+## Project Setup Instructions
+
+### Prerequisites
+- Java 17 (or Java 8+)
+- Maven 3.8+
+- Inventory Service running locally (for full end-to-end flow)
+
+### Build the Project
+```bash
+mvn clean install
 - Maven installed
 
 ### Run the service
